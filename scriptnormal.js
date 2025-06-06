@@ -75,7 +75,7 @@ var intervalo = setInterval(() =>{
     }
     
     
-}, 1800, 
+}, 1350, 
 )
 
 
