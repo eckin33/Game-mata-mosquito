@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nível: Fácil!</title>
+    <style>
+        *{
+            cursor: url('imagens/mata_mosca.png'), auto;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+        body{
+            background: url('imagens/bg.jpg');
+        }
+        #cronometroPai{
+            background-color: rgba(255, 255, 255, 0.527);
+            width: 230px;
+            height: 60px;
+            padding: 10px;
+            display: flex;
+            flex-flow: row nowrap;
+            gap: 35px;
+            align-items: center;
+        }
+        #cronometro{
+            font-size: 2em;
+
+        }
+        .vida3teste{
+            background-image: url('imagens/coracao_cheio.png');
+            color: transparent;
+            background-repeat: no-repeat;
+        }
+
+    </style>
+</head>
+<body>
+    <img src="imagens/mosca.png" id="mosca" width="60px" style="display: none; position: absolute;"
+    onclick="matarMosca()">
+
+    <div id="cronometroPai">
+        <div id="coraçoes">
+            <img src="imagens/coracao_cheio.png" id="vida1">
+            <img src="imagens/coracao_cheio.png" id="vida2">
+            <img src="imagens/coracao_cheio.png" id="vida3">
+        </div>
+        <div id="cronometro">
+            15
+        </div>
+
+    </div>
+</body>
+<script src="scriptnormal.js"></script>
+</html>

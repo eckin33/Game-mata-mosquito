@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perdeu!</title>
+    <style>
+        body{
+            background:  url('imagens/bg.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 98vw;
+            height: 96vh;
+        }
+        #principal{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+        }
+        
+        button{
+            width: 240px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: red;
+            color: white;
+            font-size: 1.15em;
+            border: none;
+            transition: transform .3s ease; 
+        }
+        button:hover{
+            border: 1px solid black;
+            transform: scale(1.1);
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="principal">
+        <div>
+            <img src="imagens/vitoria.png" id="perdeuImg" width="400px"><br>
+        </div>
+        <br>
+        <button onclick="inicio()">Jogar Novamente</button>
+    </div>
+</body>
+<script>
+    function inicio(){
+        window.location.href = 'index.html'
+    }
+</script>
+</html>

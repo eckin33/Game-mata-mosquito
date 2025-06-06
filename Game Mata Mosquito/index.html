@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mata Mosquito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="intro">
+        <img src="imagens/game.png" id="imgIntro">
+    </div>
+
+    <div id="box">
+        <select id="select">
+            <option value="">-- Selecione um nível --</option>
+            <option value="Fácil">Fácil</option>
+            <option value="Dificil">Dificil</option>
+            <option value="Chuck">Chuck Norris</option>
+        </select>
+        <br>
+        <button onclick="verificarNivel()" id="iniciar">Iniciar o Jogo</button>        
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
